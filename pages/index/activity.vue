@@ -42,7 +42,10 @@
 	export default {
 		data() {
 			return {
-				
+				stroeImg:[
+					'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
+					'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
+				]
 			};
 		}
 	}

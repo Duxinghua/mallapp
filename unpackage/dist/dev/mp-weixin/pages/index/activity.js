@@ -178,7 +178,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _default =
 {
   data: function data() {
-    return {};
+    return {
+      stroeImg: [
+      'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
+      'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'] };
 
 
   } };exports.default = _default;
