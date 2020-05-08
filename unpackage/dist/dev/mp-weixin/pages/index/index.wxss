@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background: #f8f8f8;
+}
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+.page-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+.page-ad {
+  width: 100%;
+  height: 206rpx;
+  margin: 15rpx auto 0rpx auto;
+}
+.bg {
+  height: 280rpx;
+  width: 100%;
+  background-image: -webkit-linear-gradient(330deg, #ff6634, #ff362a);
+  background-image: linear-gradient(120deg, #ff6634, #ff362a);
+  padding: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.bg .search-wrap {
+  width: 100%;
+  height: 62rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  background: white;
+  margin-bottom: 30rpx;
+  padding: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.bg .search-wrap .searchText {
+  padding-left: 30rpx;
+  color: #666;
+}
+.screen-swiper-fix {
+  height: 340rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+.itemimg {
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+.menu-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0 30rpx;
+  margin-top: 240rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.menu-wrap .menuItem {
+  width: 20%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 30rpx;
+}
+.menu-wrap .menuItem .menuimg {
+  width: 104rpx;
+  height: 104rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.menu-wrap .menuItem .cateName {
+  margin-top: 15rpx;
+  font-size: 22rpx;
+  color: #333;
+}
+.page-hot {
+  width: 690rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  height: 408rpx;
+  padding: 15rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-linear-gradient(120deg, #ff2727 0%, #ff6633 100%);
+  background: linear-gradient(-30deg, #ff2727 0%, #ff6633 100%);
+  border-radius: 14px;
+  margin: 0 auto;
+}
+.page-hot .hot-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+}
+.page-hot .hot-title .hot1 {
+  font-size: 35rpx;
+  color: #fff;
+  font-weight: 800;
+}
+.page-hot .hot-title .hot2 {
+  font-size: 23rpx;
+  color: #fff;
+  font-weight: 800;
+  margin-left: 30rpx;
+  padding-left: 30rpx;
+  position: relative;
+}
+.page-hot .hot-title .hot2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2rpx;
+  height: 70%;
+  background-color: white;
+}
+.page-hot .hot-title .hot-go {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-left: auto;
+  padding: 10rpx 16rpx;
+  background: white;
+  border-radius: 20rpx;
+}
+.page-hot .hot-title .hot-go text {
+  font-size: 21rpx;
+}
+.page-hot .hot-title .hot-go image {
+  width: 8rpx;
+  height: 15rpx;
+}
+.page-hot .hot-content {
+  width: 100%;
+  height: 303rpx;
+  background: white;
+  border-radius: 7rpx;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding-top: 14rpx;
+  padding-right: 14rpx;
+  padding-left: 14rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+.page-menu {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 21rpx;
+  padding-right: 21rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.page-menu .menuwrap {
+  display: -webkit-box;
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.page-menu .menuwrap .menuItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 150rpx;
+  margin-right: 60rpx;
+}
+.page-menu .menuwrap .menuItem .title1 {
+  font-size: 35rpx;
+  font-weight: 800;
+  color: #333;
+}
+.page-menu .menuwrap .menuItem .title2 {
+  font-size: 23rpx;
+  color: #666;
+  font-weight: 500;
+  margin-top: 10rpx;
+}
+.page-menu .menuwrap .menuItem .active {
+  padding: 8rpx 15rpx;
+  background: #FF6633;
+  border-radius: 18rpx;
+  color: white;
+}
+.page-menu .menuwrap .active .title1 {
+  color: #FF432C;
+}
+.page-goodslist {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding: 21rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 10rpx;
+}
+.page-goodslist .goodlist {
+  /* Firefox */
+  -webkit-column-count: 2;
+  /* Safari 和 Chrome */
+  column-count: 2;
+  -webkit-column-gap: 14rpx;
+  column-gap: 14rpx;
+  height: 100%;
+  overflow: auto;
+}
+
